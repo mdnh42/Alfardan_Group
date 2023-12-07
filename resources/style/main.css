@@ -19,6 +19,110 @@ body {
     /* Add any additional styles as needed */
 }
 
+
+/* Banner start */
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Banner End */
+
+/* Prograssion Bar */
+.progress {
+    height: 20px;
+    position: relative;
+}
+
+.progress-bar-arrow {
+    position: absolute;
+    top: -10px;
+}
+
+.progress-bar-label {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+/* Let's Get SOcial */
+.section {
+    padding: 50px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.image-slider {
+    margin-top: 20px;
+}
+
+.image-slider img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/* Footer Section */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list-item {
+    margin-bottom: 8px;
+}
+
+.footer-list-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-list-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer End */
+
 /* Custom styles for header 
 header {
     background-color: #343a40;

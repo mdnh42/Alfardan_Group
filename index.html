@@ -12,6 +12,9 @@
         <!-- Google Font - Replace 'Open+Sans' with your preferred font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/resources/style/main.css">
 
@@ -25,16 +28,35 @@
 
         <!-- Header -->
         <!-- Navigation Bar -->
-        <header>
+        <header class="container">
             <nav class="navbar-light bg-light">
                 <div class="">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                            <button class="navbar-toggler dropdown-toggle" type="button" data-toggle="collapse"
+                                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <h1>Logo</h1>
+                        </div>
+                        <div class="d-flex">
+                            <a class="dropdown-item" href="#">
+                                <i class="fab fa-facebook"></i> Facebook
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fab fa-youtube"></i> YouTube
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between flex-wrap sm:center">
                             <div class="">
                                 <h2>Alfardan Group</h2>
                                 <div>
@@ -162,46 +184,532 @@
 
 
         <!-- Main Content -->
-        <main>
-            <h2>Main Content</h2>
-            <p>Your main content goes here.</p>
-        </main>
+        <main class="container">
+            <!-- Banner Start-->
+            <video autoplay muted loop>
+                <!-- Replace 'your-video.mp4' with the path to your video file -->
+                <source src="./resources/images/backround.mp4" type="video/mp4">
 
-        <!-- Large Item -->
-        <div class="large-item text-center">
-            Large Item
-        </div>
+            </video>
 
-        <!-- Services Section -->
-        <div class="services">
-            <h2>Services</h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <h4>Service 1</h4>
-                    <p>Description of Service 1.</p>
+            <!-- Banner End -->
+
+            <!-- Vision and Mission  -->
+            <section>
+                <div class="row">
+
+                    <!-- Card 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="">
+                            <img src="/resources/images/logo.png" class="card-img-top" alt="Card Image">
+                            <div class="card-body text-center">
+                                <h1 class="display-4">42</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="">
+                            <img src="/resources/images/logo.png" class="card-img-top" alt="Card Image">
+                            <div class="card-body text-center">
+                                <h1 class="display-4">65</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="">
+                            <img src="/resources/images/logo.png" class="card-img-top" alt="Card Image">
+                            <div class="card-body text-center">
+                                <h1 class="display-4">87</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="">
+                            <img src="/resources/images/logo.png" class="card-img-top" alt="Card Image">
+                            <div class="card-body text-center">
+                                <h1 class="display-4">53</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-md-3">
-                    <h4>Service 2</h4>
-                    <p>Description of Service 2.</p>
+            </section>
+
+            <!-- CEO -->
+            <section>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <h1>Big Text Heading</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt ex sit amet
+                                ultrices consectetur.
+                                In hac habitasse platea dictumst. Aenean efficitur libero ut orci consectetur, vel
+                                sodales risus tristique.
+                                Integer aliquet lacus vel dui bibendum, ac volutpat leo bibendum. Vestibulum sit amet
+                                turpis euismod,
+                                fermentum orci nec, fringilla dolor. Nulla facilisi. Sed sit amet lectus id arcu
+                                vulputate varius vel ut libero.
+                                Curabitur ut est quis metus ultricies vulputate. Sed ut lectus sit amet quam posuere
+                                varius ac ac neque.
+                                In hac habitasse platea dictumst. Morbi eu tellus vel libero blandit mattis ut et nunc.
+                                Integer a semper elit. In hac habitasse platea dictumst.
+                            </p>
+                            <p>
+                                Vivamus eu massa sit amet tortor bibendum imperdiet vel at nisi. Vestibulum vestibulum
+                                rhoncus ligula,
+                                ac tincidunt augue hendrerit in. Sed vel venenatis odio, a bibendum justo. Quisque a
+                                velit ac dui congue
+                                fermentum nec vel arcu. Integer fermentum elit nec leo ultricies, id accumsan risus
+                                pellentesque.
+                                Nullam vel sollicitudin tortor, vel cursus mauris. Fusce varius malesuada sem, non
+                                semper turpis dapibus
+                                nec. Integer laoreet lacus vel justo venenatis, nec eleifend dolor efficitur. Fusce
+                                euismod hendrerit
+                                felis, ac hendrerit elit finibus et. Maecenas bibendum elit eget metus rhoncus, id
+                                elementum libero
+                                tempor. Sed ut justo vel lacus posuere pulvinar.
+                            </p>
+
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+
+                        <!-- Right Side (Photo) -->
+                        <div class="col-md-6">
+                            <img src="./resources/images/ceo.jpg" class="img-fluid" alt="Section Image">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <h4>Service 3</h4>
-                    <p>Description of Service 3.</p>
+            </section>
+            <!-- Our Vision & Mission -->
+            <section>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <h1>Big Text Heading</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt ex sit amet
+                                ultrices consectetur.
+                                In hac habitasse platea dictumst. Aenean efficitur libero ut orci consectetur, vel
+                                sodales risus tristique.
+                                Integer aliquet lacus vel dui bibendum, ac volutpat leo bibendum. Vestibulum sit amet
+                                turpis euismod,
+                                fermentum orci nec, fringilla dolor. Nulla facilisi. Sed sit amet lectus id arcu
+                                vulputate varius vel ut libero.
+                                Curabitur ut est quis metus ultricies vulputate. Sed ut lectus sit amet quam posuere
+                                varius ac ac neque.
+                                In hac habitasse platea dictumst. Morbi eu tellus vel libero blandit mattis ut et nunc.
+                                Integer a semper elit. In hac habitasse platea dictumst.
+                            </p>
+                            <p>
+                                Vivamus eu massa sit amet tortor bibendum imperdiet vel at nisi. Vestibulum vestibulum
+                                rhoncus ligula,
+                                ac tincidunt augue hendrerit in. Sed vel venenatis odio, a bibendum justo. Quisque a
+                                velit ac dui congue
+                                fermentum nec vel arcu. Integer fermentum elit nec leo ultricies, id accumsan risus
+                                pellentesque.
+                                Nullam vel sollicitudin tortor, vel cursus mauris. Fusce varius malesuada sem, non
+                                semper turpis dapibus
+                                nec. Integer laoreet lacus vel justo venenatis, nec eleifend dolor efficitur. Fusce
+                                euismod hendrerit
+                                felis, ac hendrerit elit finibus et. Maecenas bibendum elit eget metus rhoncus, id
+                                elementum libero
+                                tempor. Sed ut justo vel lacus posuere pulvinar.
+                            </p>
+
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+
+                        <!-- Right Side (Photo) -->
+                        <div class="col-md-6">
+                            <img src="/resources/images/ceo.jpg" class="img-fluid" alt="Section Image">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <h4>Service 4</h4>
-                    <p>Description of Service 4.</p>
+            </section>
+
+
+            <section class="pt-5">
+                <div class="row">
+
+                    <!-- Card 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="">
+                            <img src="/resources/images/logo.png" class="card-img-top" alt="Card Image">
+                            <div class="card-body text-center">
+                                <h1 class="display-4">42</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="">
+                            <img src="/resources/images/logo.png" class="card-img-top" alt="Card Image">
+                            <div class="card-body text-center">
+                                <h1 class="display-4">65</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="">
+                            <img src="/resources/images/logo.png" class="card-img-top" alt="Card Image">
+                            <div class="card-body text-center">
+                                <h1 class="display-4">87</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="">
+                            <img src="/resources/images/logo.png" class="card-img-top" alt="Card Image">
+                            <div class="card-body text-center">
+                                <h1 class="display-4">53</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section>
+                <div class="container">
+                    <h2>Progress Bar with Milestones</h2>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 10%;"
+                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar-arrow">↓</div>
+                            <div class="progress-bar-label">1954</div>
+                        </div>
+
+                        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 20%;"
+                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar-arrow">↓</div>
+                            <div class="progress-bar-label">1971</div>
+                        </div>
+
+                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 30%;"
+                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar-arrow">↓</div>
+                            <div class="progress-bar-label">1982</div>
+                        </div>
+
+                        <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 40%;"
+                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar-arrow">↓</div>
+                            <div class="progress-bar-label">1990</div>
+                        </div>
+
+                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%;"
+                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar-arrow">↓</div>
+                            <div class="progress-bar-label">1993</div>
+                        </div>
+
+                        <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar"
+                            style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar-arrow">↓</div>
+                            <div class="progress-bar-label">1996</div>
+                        </div>
+
+                        <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 70%;"
+                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar-arrow">↓</div>
+                            <div class="progress-bar-label">2000</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section>
+                <div class="container mt-5">
+                    <h1 class="text-center mb-4">Large Text Section</h1>
+
+
+                    <ul class="nav nav-tabs" id="myTabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#jewellery">Jewellery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#properties">Properties</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#properties">EXCHANGE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#properties">Investment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#properties">Marine Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#properties">Properties</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#properties">Hospitality</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#properties">Medical </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#properties">Properties</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="tab-content mt-3">
+                        <div class="tab-pane fade show active" id="jewellery">
+                            <p>Content related to Jewellery goes here.</p>
+                        </div>
+                        <div class="tab-pane fade" id="properties">
+                            <p>Content related to Properties goes here.</p>
+                        </div>
+                        <!-- Add more tab panes as needed -->
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section>
+                <div class="container">
+                    <div class="large-text-section">
+                        <h1 class="text-center">Our Pattern</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt ex sit amet
+                            ultrices consectetur.
+                            In hac habitasse platea dictumst. Aenean efficitur libero ut orci consectetur, vel sodales
+                            risus tristique.
+                            Integer aliquet lacus vel dui bibendum, ac volutpat leo bibendum. Vestibulum sit amet turpis
+                            euismod,
+                            fermentum orci nec, fringilla dolor. Nulla facilisi. Sed sit amet lectus id arcu vulputate
+                            varius vel ut libero.
+                            Curabitur ut est quis metus ultricies vulputate. Sed ut lectus sit amet quam posuere varius
+                            ac ac neque.
+                            In hac habitasse platea dictumst. Morbi eu tellus vel libero blandit mattis ut et nunc.
+                            Integer a semper elit. In hac habitasse platea dictumst.
+                        </p>
+                    </div>
+
+                    <div class="image-slider">
+                        <div class="slick-carousel">
+                            <div><img src="/resources/images/all.jpg" alt="Image 1"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+
+            <section>
+                <div class="row">
+
+                    <!-- Card 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="">
+                            <img src="/resources/images/logo.png" class="card-img-top" alt="Card Image">
+                            <div class="card-body text-center">
+                                <h1 class="display-4">42</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="">
+                            <img src="/resources/images/logo.png" class="card-img-top" alt="Card Image">
+                            <div class="card-body text-center">
+                                <h1 class="display-4">65</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="">
+                            <img src="/resources/images/logo.png" class="card-img-top" alt="Card Image">
+                            <div class="card-body text-center">
+                                <h1 class="display-4">87</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="">
+                            <img src="/resources/images/logo.png" class="card-img-top" alt="Card Image">
+                            <div class="card-body text-center">
+                                <h1 class="display-4">53</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <section>
+                <div class="container">
+                    <div class="section">
+                        <h1 class="text-center">Large Text Section</h1>
+                        <a href="#" class="btn btn-primary">View All</a>
+                    </div>
+
+                    <div class="slider-container">
+                        <div class="slick-carousel">
+                            <div><img src="/resources/images/logo.png" alt="Image 1"></div>
+
+                        </div>
+                    </div>
+
+                    <div class="additional-data">
+                        <h2>Additional Data</h2>
+                        <p>
+                            Additional large text or data goes here. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                            Nulla tincidunt ex sit amet ultrices consectetur. In hac habitasse platea dictumst.
+                        </p>
+                        <a href="#" class="btn btn-secondary">Read More</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Let's GEt Social -->
+            <div class="container">
+                <div class="section">
+                    <h1 class="text-center">Large Text Section</h1>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <!-- Add more social icons as needed -->
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt ex sit amet ultrices
+                        consectetur.
+                        In hac habitasse platea dictumst. Aenean efficitur libero ut orci consectetur, vel sodales risus
+                        tristique.
+                        Integer aliquet lacus vel dui bibendum, ac volutpat leo bibendum. Vestibulum sit amet turpis
+                        euismod,
+                        fermentum orci nec, fringilla dolor. Nulla facilisi. Sed sit amet lectus id arcu vulputate
+                        varius vel ut libero.
+                        Curabitur ut est quis metus ultricies vulputate. Sed ut lectus sit amet quam posuere varius ac
+                        ac neque.
+                        In hac habitasse platea dictumst. Morbi eu tellus vel libero blandit mattis ut et nunc.
+                        Integer a semper elit. In hac habitasse platea dictumst.
+                    </p>
+                </div>
+
+                <div class="image-slider">
+                    <div class="slick-carousel">
+                        <div><img src="https://via.placeholder.com/600x300" alt="Image 1"></div>
+                        <div><img src="https://via.placeholder.com/600x300" alt="Image 2"></div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
 
-        <!-- Footer -->
         <footer>
-            &copy; 2023 Your Website Name. All Rights Reserved.
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-columns">
+                        <!-- Column 1 -->
+                        <div class="footer-column">
+                            <div class="footer-heading">Column 1</div>
+                            <ul class="footer-list">
+                                <li class="footer-list-item"><a href="#" class="footer-list-link">Link 1</a></li>
+                                <li class="footer-list-item"><a href="#" class="footer-list-link">Link 2</a></li>
+                                <li class="footer-list-item"><a href="#" class="footer-list-link">Link 3</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="footer-column">
+                            <div class="footer-heading">Column 2</div>
+                            <ul class="footer-list">
+                                <li class="footer-list-item"><a href="#" class="footer-list-link">Link 1</a></li>
+                                <li class="footer-list-item"><a href="#" class="footer-list-link">Link 2</a></li>
+                                <li class="footer-list-item"><a href="#" class="footer-list-link">Link 3</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="footer-column">
+                            <div class="footer-heading">Column 3</div>
+                            <ul class="footer-list">
+                                <li class="footer-list-item"><a href="#" class="footer-list-link">Link 1</a></li>
+                                <li class="footer-list-item"><a href="#" class="footer-list-link">Link 2</a></li>
+                                <li class="footer-list-item"><a href="#" class="footer-list-link">Link 3</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 4 -->
+                        <div class="footer-column">
+                            <div class="footer-heading">Column 4</div>
+                            <ul class="footer-list">
+                                <li class="footer-list-item"><a href="#" class="footer-list-link">Link 1</a></li>
+                                <li class="footer-list-item"><a href="#" class="footer-list-link">Link 2</a></li>
+                                <li class="footer-list-item"><a href="#" class="footer-list-link">Link 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                &copy; 2023 Your Website Name. All Rights Reserved.
+            </div>
         </footer>
 
+
+
+
         <!-- Script -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="./resources/script/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+
+
+
+
     </body>
 
 </html>
