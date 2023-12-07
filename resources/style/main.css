@@ -1,0 +1,58 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom styles for header */
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Custom styles for navigation bar */
+nav {
+    background-color: #007bff;
+}
+
+/* Custom styles for dropdown menu */
+.dropdown-menu {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Custom styles for main content */
+main {
+    padding: 20px;
+}
+
+/* Custom styles for large item */
+.large-item {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+/* Custom styles for footer */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Custom styles for services section */
+.services {
+    margin-top: 20px;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+    .large-item {
+        font-size: 18px;
+    }
+}
