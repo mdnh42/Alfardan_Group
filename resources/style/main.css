@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sora', sans-serif;
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
@@ -13,6 +15,10 @@ a {
 
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    color: black;
+}
 
 header {
     position: sticky;
@@ -91,6 +97,10 @@ video {
 
 .position-relative {
     position: relative;
+}
+
+.our-vision-bg {
+    background-color: #EDECE9;
 }
 
 .card-overlay {
@@ -240,6 +250,7 @@ video {
 .social-icons {
     margin-top: 10px;
     text-align: center;
+    font-size: 12px;
 }
 
 .social-icons i {
@@ -305,8 +316,6 @@ video {
 }
 
 
-
-
 /*======================
 Scrolling oUr Partner
 ====================
@@ -365,63 +374,3 @@ Scrolling oUr Partner
         transform: translateX(calc(-150px * 5));
     }
 }
-
-
-
-
-
-
-/* Footer End */
-
-/* Custom styles for header 
-header {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Custom styles for navigation bar 
-nav {
-    background-color: #007bff;
-}
-
-/* Custom styles for dropdown menu 
-.dropdown-menu {
-    background-color: #007bff;
-    color: #ffffff;
-}
-
-/* Custom styles for main content 
-main {
-    padding: 20px;
-}
-
-/* Custom styles for large item 
-.large-item {
-    font-size: 24px;
-    font-weight: bold;
-    color: #007bff;
-    margin-top: 20px;
-}
-
-/* Custom styles for footer 
-footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Custom styles for services section 
-.services {
-    margin-top: 20px;
-}
-
-/* Responsive styles for small screens 
-@media (max-width: 768px) {
-    .large-item {
-        font-size: 18px;
-    }
-}
-/*
