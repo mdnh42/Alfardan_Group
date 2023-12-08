@@ -66,3 +66,10 @@ five.onclick = function() {
     four.classList.add("active");
     five.classList.add("active");
 }
+
+
+
+
+
+// ===================== Out Partner Scrolling Script
+
