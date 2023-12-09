@@ -1,26 +1,26 @@
-$(document).ready(function(){
-    $('.slick-carousel').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 2
-                }
-            }
-        ]
-    });
-});
+// $(document).ready(function(){
+//     $('.slick-carousel').slick({
+//         slidesToShow: 5,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         autoplaySpeed: 2000,
+//         arrows: false,
+//         responsive: [
+//             {
+//                 breakpoint: 768,
+//                 settings: {
+//                     slidesToShow: 3
+//                 }
+//             },
+//             {
+//                 breakpoint: 576,
+//                 settings: {
+//                     slidesToShow: 2
+//                 }
+//             }
+//         ]
+//     });
+// });
 
 
 // Bar
@@ -72,4 +72,27 @@ five.onclick = function() {
 
 
 // ===================== Out Partner Scrolling Script
+const leftButton = document.getElementById('leftButton');
+  const rightButton = document.getElementById('rightButton');
+  const yearList = document.getElementById('yearList');
 
+  let currentIndex = 0;
+
+  leftButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateYearList();
+    }
+  });
+
+  rightButton.addEventListener('click', () => {
+    if (currentIndex < yearList.children.length - 8) {
+      currentIndex++;
+      updateYearList();
+    }
+  });
+
+  function updateYearList() {
+    const offset = currentIndex * 60; // Adjust the offset based on your item size
+    yearList.style.transform = `translateX(-${offset}px)`;
+  }
