@@ -133,6 +133,44 @@ video {
 
 
 
+.img-pos {
+    position: relative;
+}
+
+.bg-image {
+    position: relative;
+
+}
+
+.bg-image-left,
+.bg-image-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    /* Adjust the width as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.bg-image-left {
+    left: 0;
+    /* background-image: url('/resources/images/Rectangle\ 32.png'); */
+    /* Replace with the path to your left background image */
+}
+
+.bg-image-right {
+    right: -400;
+    /* background-image: url('/resources/images/Rectangle\ 33.png'); */
+    /* Replace with the path to your right background image */
+}
+
+/* Optional: You can also add padding to the container to create some space around the content */
+.bg-image .container {
+    padding: 20px;
+}
 
 
 
